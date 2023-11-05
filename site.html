@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+      font-family: 'Source Sans Pro';font-size: 25px; color: #FFFFFF;
+    }
+    </style>
+    </head>
+<body style="text-align:center; background-color: #004e84">
+
+<img src="logo.png" alt="Mostra Marista de Empreendedorismo" style="max-width: 10%;">
+
+<p>Descubra o que existe em cada sala ao clicar em cada uma delas!</p>
+
+<img src="fundo.png" alt="Workplace" usemap="#mapa" style="max-width: 100%;">
+
+
+
+<h2>Popup</h2>
+
+<div class="popup" onclick="myFunction('Harry Potter','Wizard')">
+  <button> Try it </button>
+  <span class="popuptext" id="myPopup">Ankit </span>
+</div>
+
+<p id="demo"></p>
+
+<script>
+// When the user clicks on div, open the popup
+document.getElementById("myPopup").innerHTML= "Welcome " + name + ", the " + job + ".";
+function myFunction(name,job) {
+
+    var popup =document.getElementById("myPopup");
+    popup.innerHTML = "Welcome " + name + ", the " + job + ".";
+    popup.classList.toggle("show"); 
+}
+</script>
+
+</body>
+</html>
