@@ -2,42 +2,31 @@
 <html>
   <head>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    body{
-      font-family: 'Source Sans Pro';font-size: 25px; color: #FFFFFF;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
     </head>
 <body style="text-align:center; background-color: #004e84">
 
-<img src="logo.png" alt="Mostra Marista de Empreendedorismo" style="max-width: 10%;">
+<img src="logo.png" alt="Mostra Marista de Empreendedorismo" class="center" style="max-width: 20%;">
 
 <p>Descubra o que existe em cada sala ao clicar em cada uma delas!</p>
 
-<img src="fundo.png" alt="Workplace" usemap="#mapa" style="max-width: 100%;">
+<img src="background.png" usemap="#mapa">
+<map name="mapa">
+  <area target="" alt="2a" title="2a" href="arquivos/2a.html" coords="497,425,601,513" shape="rect">
+  <area target="" alt="9b" title="9b" href="arquivos/9b.html" coords="439,531,562,611" shape="rect">
+  <area target="" alt="9a" title="9a" href="arquivos/9a.html" coords="389,631,516,719" shape="rect">
+  <area target="" alt="1b" title="1b" href="arquivos/1b.html" coords="347,742,485,848" shape="rect">
+  <area target="" alt="1a" title="1a" href="arquivos/1a.html" coords="268,879,408,984" shape="rect">
+</map>
+
+<img src="logo_colegio.png" class="center"  style="max-width: 65%;">
 
 
+<script src="https://unpkg.com/image-map/dist/image-map.js"></script>
 
-<h2>Popup</h2>
-
-<div class="popup" onclick="myFunction('Harry Potter','Wizard')">
-  <button> Try it </button>
-  <span class="popuptext" id="myPopup">Ankit </span>
-</div>
-
-<p id="demo"></p>
-
-<script>
-// When the user clicks on div, open the popup
-document.getElementById("myPopup").innerHTML= "Welcome " + name + ", the " + job + ".";
-function myFunction(name,job) {
-
-    var popup =document.getElementById("myPopup");
-    popup.innerHTML = "Welcome " + name + ", the " + job + ".";
-    popup.classList.toggle("show"); 
-}
-</script>
+  <script>
+  ImageMap('img[usemap]', 500);
+  </script>
 
 </body>
 </html>
